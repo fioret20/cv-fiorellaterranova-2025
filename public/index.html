@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Fiorella Terranova</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333;
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 2px;
+            background-color: #4FD1C5;
+            margin-top: 6px;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-900">
+                Fiorella Terranova
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#summary" class="text-gray-600 hover:text-teal-500 transition duration-200">Resumen</a>
+                <a href="#experience" class="text-gray-600 hover:text-teal-500 transition duration-200">Experiencia</a>
+                <a href="#education" class="text-gray-600 hover:text-teal-500 transition duration-200">Educación</a>
+                <a href="#skills" class="text-gray-600 hover:text-teal-500 transition duration-200">Habilidades</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2">
+            <a href="#summary" class="block text-gray-600 hover:text-teal-500 transition duration-200">Resumen</a>
+            <a href="#experience" class="block text-gray-600 hover:text-teal-500 transition duration-200">Experiencia</a>
+            <a href="#education" class="block text-gray-600 hover:text-teal-500 transition duration-200">Educación</a>
+            <a href="#skills" class="block text-gray-600 hover:text-teal-500 transition duration-200">Habilidades</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12 max-w-4xl">
+
+        <section id="hero" class="text-center mb-16">
+            <img src="foto-cv-terranova.jpg" alt="Foto de perfil de Fiorella Terranova" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover shadow-md">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-2">Fiorella Terranova</h1>
+            <h2 class="text-xl md:text-2xl text-teal-600 font-medium mb-6">Estudiante de Ingeniería | Experiencia en Operaciones y Onboarding</h2>
+            <div class="flex justify-center space-x-6 text-sm text-gray-600">
+                <a href="mailto:fiorellaterranova0@gmail.com" class="hover:text-teal-500 transition duration-200 flex items-center space-x-1">
+                    <span>✉️</span>
+                    <span>fiorellaterranova0@gmail.com</span>
+                </a>
+                <a href="tel:+541128726589" class="hover:text-teal-500 transition duration-200 flex items-center space-x-1">
+                    <span>📞</span>
+                    <span>1128726589</span>
+                </a>
+                <a href="https://www.linkedin.com/in/fiorella-terranova/" target="_blank" class="hover:text-teal-500 transition duration-200 flex items-center space-x-1">
+                    <svg role="img" viewBox="0 0 24 24" class="w-5 h-5 fill-current text-blue-700">
+                        <path d="M20.447 20.452h-3.554v-5.568c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.666H9.153V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.606 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.218c-1.31 0-2.385-.95-2.385-2.256 0-1.306 1.075-2.381 2.385-2.381s2.385 1.075 2.385 2.381c-.001 1.306-1.076 2.256-2.385 2.256zM6.644 20.452H3.978V9h2.666v11.452z"/>
+                    </svg>
+                    <span>Fiorella Terranova</span>
+                </a>
+                <a href="https://github.com/fioret20" target="_blank" class="hover:text-teal-500 transition duration-200 flex items-center space-x-1">
+                    <svg role="img" viewBox="0 0 24 24" class="w-5 h-5 fill-current text-gray-600">
+                        <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.744.083-.73.083-.73 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.775.418-1.305.762-1.604-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.125-.3-.54-1.52.115-3.176 0 0 1.005-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.006.404 2.29-1.552 3.297-1.23 3.297-1.23.655 1.656.24 2.876.12 3.176.77.84 1.232 1.91 1.232 3.22 0 4.61-2.806 5.62-5.473 5.92.42.36.81 1.096.81 2.21 0 1.606-.015 2.89-.015 3.28 0 .319.21.694.825.577C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                    </svg>
+                    <span>fioret20</span>
+                </a>
+            </div>
+        </section>
+
+        <section id="summary" class="mb-16 scroll-mt-20">
+            <h3 class="text-2xl font-bold mb-6 section-title">Resumen Profesional</h3>
+            <p class="text-gray-600 leading-relaxed">
+                Estudiante de Ingeniería con experiencia en roles de Operaciones y <strong>onboarding</strong> de clientes en el sector de <strong>fintech</strong>. Tengo una gran <strong>independencia</strong> y <strong>rapidez para aprender y resolver inconvenientes</strong>, con un fuerte foco en la <strong>resolución de problemas</strong> y el <strong>soporte técnico</strong> gracias a mis habilidades. Soy una persona entusiasta, con gran <strong>orientación al detalle</strong> y un marcado gusto por los desafíos. Busco aplicar mis habilidades en un primer empleo en el área de Onboarding de Prex, contribuyendo a la calidad del servicio y a la inclusión financiera.
+            </p>
+        </section>
+
+        <section id="experience" class="mb-16 scroll-mt-20">
+            <h3 class="text-2xl font-bold mb-8 section-title">Experiencia Laboral</h3>
+            <div class="relative border-l border-gray-200 pl-8 space-y-10">
+                <div class="absolute w-2 h-2 bg-teal-500 rounded-full -left-1 top-2 ring-2 ring-white"></div>
+                <div class="transition-all duration-200 hover:bg-gray-100 p-4 rounded-lg">
+                    <span class="text-sm font-medium text-teal-600">Febrero 2024 – Julio 2024</span>
+                    <h4 class="text-xl font-bold mt-1">Operaciones/Soporte</h4>
+                    <p class="text-md text-gray-500 mb-2">Teleperformance</p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-1 text-sm">
+                        <li>Brindé soporte integral a clientes de una <strong>billetera virtual</strong>, resolviendo inconvenientes relacionados con productos financieros y gestionando transferencias.</li>
+                        <li>Realicé la <strong>validación de datos</strong> y el <strong>control de documentación</strong> para la correcta gestión de los clientes utilizando herramientas como Yoizen, Jumio y Openpass.</li>
+                        <li>Manejé múltiples plataformas y herramientas informáticas simultáneamente para realizar **tareas administrativas** y asegurar el seguimiento de casos.</li>
+                        <li>Cumplí con métricas mensuales de desempeño y aseguré la correcta tipificación de casos.</li>
+                    </ul>
+                </div>
+
+                <div class="absolute w-2 h-2 bg-teal-500 rounded-full -left-1 top-[calc(50%-4px)] ring-2 ring-white"></div>
+                <div class="transition-all duration-200 hover:bg-gray-100 p-4 rounded-lg">
+                    <span class="text-sm font-medium text-teal-600">Agosto 2023 – Noviembre 2023</span>
+                    <h4 class="text-xl font-bold mt-1">Asistente de Dirección (Pasantía)</h4>
+                    <p class="text-md text-gray-500 mb-2">By Urbana (Fintech/Intech)</p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-1 text-sm">
+                        <li>Asistí en la gestión de agendas, viajes y eventos, demostrando proactividad y atención al detalle.</li>
+                        <li>Participé activamente en reuniones y realicé el seguimiento de proyectos para apoyar la gestión.</li>
+                        <li>Fui responsable de tareas administrativas y comunicación con clientes y proveedores.</li>
+                    </ul>
+                </div>
+
+                <div class="absolute w-2 h-2 bg-teal-500 rounded-full -left-1 bottom-1 ring-2 ring-white"></div>
+                <div class="transition-all duration-200 hover:bg-gray-100 p-4 rounded-lg">
+                    <span class="text-sm font-medium text-teal-600">2019 – 2021</span>
+                    <h4 class="text-xl font-bold mt-1">Encargada Sector de Ventas</h4>
+                    <p class="text-md text-gray-500 mb-2">Salón Multiespacios Wilde</p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-1 text-sm">
+                        <li>Desempeñé funciones de venta y asesoramiento comercial, logrando expandir la cartera de clientes.</li>
+                        <li>Apliqué habilidades de comunicación y negociación para cerrar ventas.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="mb-16 scroll-mt-20">
+            <h3 class="text-2xl font-bold mb-8 section-title">Educación</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100">
+                    <h4 class="text-xl font-bold">Ingeniería en Computación</h4>
+                    <p class="text-gray-500 mb-2">Universidad Nacional Arturo Jauretche (2023 - En curso)</p>
+                    <p class="text-gray-600 text-sm">
+                        Carrera enfocada en hardware, sistemas operativos, redes de comunicaciones de datos, seguridad de la información, bases de datos, aplicaciones y sistemas, sumado al enfoque de su implementación organizacional.
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100">
+                    <h4 class="text-xl font-bold">Programadora Web Full Stack</h4>
+                    <p class="text-gray-500 mb-2">IT Education, JPMorgan y Fundación Pescar (2024/06 - En curso, 395 hs)</p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-1 text-sm mt-2">
+                        <li>Formación en Programación Web Full Stack MERN (237 hs)</li>
+                        <li>Formación en Habilidades Interpersonales (158 hs)</li>
+                        <li>Ciclo de charlas 'A day in a life of...'</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100">
+                    <h4 class="text-xl font-bold">Licenciatura en Turismo</h4>
+                    <p class="text-gray-500 mb-2">Universidad de La Plata (2019 - 2025)</p>
+                    <p class="text-gray-600 text-sm">
+                        Carrera enfocada al ámbito económico y organizacional enfocada en el turismo, con aplicación de proyectos.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="scroll-mt-20">
+            <h3 class="text-2xl font-bold mb-8 section-title">Habilidades</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-xl font-semibold mb-4 text-gray-700">Habilidades Blandas</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-teal-100 text-teal-800 text-sm font-medium px-3 py-1 rounded-full">Independencia</span>
+                        <span class="bg-teal-100 text-teal-800 text-sm font-medium px-3 py-1 rounded-full">Rapidez para aprender</span>
+                        <span class="bg-teal-100 text-teal-800 text-sm font-medium px-3 py-1 rounded-full">Resolución de problemas</span>
+                        <span class="bg-teal-100 text-teal-800 text-sm font-medium px-3 py-1 rounded-full">Soporte técnico</span>
+                        <span class="bg-teal-100 text-teal-800 text-sm font-medium px-3 py-1 rounded-full">Orientación al detalle</span>
+                        <span class="bg-teal-100 text-teal-800 text-sm font-medium px-3 py-1 rounded-full">Gusto por los desafíos</span>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4 text-gray-700">Herramientas Informáticas</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-sky-100 text-sky-800 text-sm font-medium px-3 py-1 rounded-full">HTML</span>
+                        <span class="bg-sky-100 text-sky-800 text-sm font-medium px-3 py-1 rounded-full">CSS</span>
+                        <span class="bg-sky-100 text-sky-800 text-sm font-medium px-3 py-1 rounded-full">JavaScript</span>
+                        <span class="bg-sky-100 text-sky-800 text-sm font-medium px-3 py-1 rounded-full">TypeScript</span>
+                        <span class="bg-sky-100 text-sky-800 text-sm font-medium px-3 py-1 rounded-full">React</span>
+                        <span class="bg-sky-100 text-sky-800 text-sm font-medium px-3 py-1 rounded-full">Astro</span>
+                        <span class="bg-sky-100 text-sky-800 text-sm font-medium px-3 py-1 rounded-full">Python</span>
+                        <span class="bg-sky-100 text-sky-800 text-sm font-medium px-3 py-1 rounded-full">Node.js</span>
+                        <span class="bg-sky-100 text-sky-800 text-sm font-medium px-3 py-1 rounded-full">MongoDB</span>
+                        <span class="bg-sky-100 text-sky-800 text-sm font-medium px-3 py-1 rounded-full">MySQL Progress</span>
+                        <span class="bg-sky-100 text-sky-800 text-sm font-medium px-3 py-1 rounded-full">Docker</span>
+                        <span class="bg-sky-100 text-sky-800 text-sm font-medium px-3 py-1 rounded-full">Git</span>
+                        <span class="bg-sky-100 text-sky-800 text-sm font-medium px-3 py-1 rounded-full">Github</span>
+                        <span class="bg-sky-100 text-sky-800 text-sm font-medium px-3 py-1 rounded-full">Notion</span>
+                        <span class="bg-sky-100 text-sky-800 text-sm font-medium px-3 py-1 rounded-full">Trello</span>
+                        <span class="bg-sky-100 text-sky-800 text-sm font-medium px-3 py-1 rounded-full">Paquete Microsoft Office</span>
+                        <span class="bg-sky-100 text-sky-800 text-sm font-medium px-3 py-1 rounded-full">Prezi</span>
+                        <span class="bg-sky-100 text-sky-800 text-sm font-medium px-3 py-1 rounded-full">SABRE</span>
+                        <span class="bg-sky-100 text-sky-800 text-sm font-medium px-3 py-1 rounded-full">SPSS Statistics</span>
+                        <span class="bg-sky-100 text-sky-800 text-sm font-medium px-3 py-1 rounded-full">AutoCAD</span>
+                        <span class="bg-sky-100 text-sky-800 text-sm font-medium px-3 py-1 rounded-full">Normas ISO 9001</span>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4 text-gray-700">Idiomas</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-purple-100 text-purple-800 text-sm font-medium px-3 py-1 rounded-full">Español (Nativo)</span>
+                        <span class="bg-purple-100 text-purple-800 text-sm font-medium px-3 py-1 rounded-full">Italiano (Avanzado)</span>
+                        <span class="bg-purple-100 text-purple-800 text-sm font-medium px-3 py-1 rounded-full">Inglés (Intermedio)</span>
+                        <span class="bg-purple-100 text-purple-800 text-sm font-medium px-3 py-1 rounded-full">Portugués (Intermedio)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8">
+                <h4 class="text-xl font-semibold mb-4 text-gray-700">Certificaciones</h4>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-yellow-100 text-yellow-800 text-sm font-medium px-3 py-1 rounded-full">Programadora web full stack - JPMorgan y Educación IT</span>
+                    <span class="bg-yellow-100 text-yellow-800 text-sm font-medium px-3 py-1 rounded-full">Diseño de Experiencia de Usuario (UX) - Google Coursera</span>
+                    <span class="bg-yellow-100 text-yellow-800 text-sm font-medium px-3 py-1 rounded-full">Uso de SABRE - Universidad Nacional de La Plata</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-50 mt-16">
+        <div class="container mx-auto px-6 py-4 text-center text-gray-500 text-sm">
+            &copy; 2024 Fiorella Terranova. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+
+</body>
+</html>
